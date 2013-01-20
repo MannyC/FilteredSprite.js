@@ -128,7 +128,7 @@
 	 * @method applyFilter
 	 */
 	p.applyFilter = function(name){
-		if(!this.spriteSheet._filteredImages[name]) return false;
+		if(!this.spriteSheet._filteredImages || !this.spriteSheet._filteredImages[name]) return false;
 
 		this._appliedFilter = name;
 
