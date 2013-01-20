@@ -21,7 +21,7 @@ Note that if you're using the minified version of CreateJS then you must manuall
 
 Make sure your SpriteSheets are complete (i.e. images fully loaded and any alterations you want to make to the frame data have already taken place).   The createFilter method will return false if the images are not fully loaded, and if you alter the frame data after running createFilter then the filtered frames will not be updated.
 
-Usage is fairly simple, although the below isn't intended to show you how to use SpriteSheets.  If you can't already get a sprite to animate then I suggest you read the EaselJS documentation and examples.
+Usage is fairly simple, although the below isn't intended to show you how to use SpriteSheets.  If you can't already get a sprite to animate then I suggest you read the EaselJS documentation and examples.  See the source for more information of the available methods.
 
     var ss = new createjs.SpriteSheet(data);
     // ensure loaded via your own means
