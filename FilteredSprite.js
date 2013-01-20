@@ -96,7 +96,13 @@
 	 * @method getFilteredFrame
 	 */
 	p.getFilteredFrame = function(frameIndex, filterName){		
-		if (this.complete && this._filteredFrames && (fframes = this._filteredFrames[filterName])  && (frame = fframes[frameIndex])) {return frame;}
+		var fframes, frame;
+		if (this.complete 
+			&& this._filteredFrames 
+			&& (fframes = this._filteredFrames[filterName])  
+			&& (frame = fframes[frameIndex])) {
+				return frame;
+		}
 		return null;
 	}
 
